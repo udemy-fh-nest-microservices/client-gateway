@@ -7,7 +7,7 @@ import { RpcCustomExceptionFilter } from './common/exceptions';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  const logger = new Logger('Client Gateway Service');
+  const logger = new Logger(' Client Gateway Service ');
 
   app.useGlobalPipes(
     new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true }),
